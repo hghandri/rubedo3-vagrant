@@ -1,0 +1,4 @@
+Runas_Alias SERVERACCOUNTS=www-data
+Cmnd_Alias SERVICERESTART=/etc/init.d/apache2 restart, /etc/init.d/memcached restart, /etc/init.d/elasticsearch restart, /etc/init.d/mongo restart
+vagrant ALL=(SERVERACCOUNTS) NOPASSWD: ALL
+vagrant ALL=(root) NOPASSWD: SERVICERESTART

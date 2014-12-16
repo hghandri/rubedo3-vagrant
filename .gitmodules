@@ -1,0 +1,4 @@
+[submodule "src"]
+	path = src
+	url = git@github.com:WebTales/rubedo.git
+	branch = v3-dev
